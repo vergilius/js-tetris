@@ -1,7 +1,12 @@
 # js-tetris
 
-This repo contains core logic for kind-of-tetris game with simple examples how it can be used with popular engines.
+This repository is focused on core logic of tetris game, so you could use it with any game engine, or own custom solution for drawing.
 
-todo:
-- lets test core logic,
-- make another example with different engine,
+## Code
+
+- Application uses browserify, but it can be easilly changed to any other module loader.
+- Example shows how to use `Tetris` class, currently it uses `Phaser`.
+
+## Testing
+
+Run `grunt test`.

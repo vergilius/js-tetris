@@ -57,6 +57,12 @@ Tetris.prototype.listen = function() {
     }.bind(this));
 };
 
+/**
+ * @todo: should validate classes directly
+ * @param Config
+ * @param BlockClass
+ * @param FigureClass
+ */
 Tetris.prototype.validate = function(Config, BlockClass, FigureClass) {
     if (!Config || !BlockClass || !FigureClass) {
         throw new Error('Missing Config, BlockClass or FigureClass');

@@ -7,10 +7,10 @@
  * @constructor
  */
 function Block(x, y, width, height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+    this.x = x || 0;
+    this.y = y || 0;
+    this.width = width || 1;
+    this.height = height || 1;
 }
 
 module.exports = Block;

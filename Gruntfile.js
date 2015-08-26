@@ -7,12 +7,26 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-jscs');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
 
     grunt.initConfig({
         browserify: {
             app: {
                 src: ['src/main.js'],
                 dest: 'dist/bundle.js'
+            },
+            tests: {
+                src: ['tests/Specs/**/*.js'],
+                dest: 'tests/specs.js'
+            }
+        },
+        jasmine: {
+            tests: {
+                src: [],
+                options: {
+                    specs: 'tests/specs.js'
+                }
             }
         },
         cssmin: {
@@ -36,14 +50,26 @@ module.exports = function(grunt) {
                 config: '.jscsrc'
             }
         },
+        uglify: {
+            js: {
+                files: {
+                    'dist/bundle.min.js': ['dist/bundle.js']
+                }
+            }
+        },
         watch: {
             js: {
                 files: ['Gruntfile.js', 'src/**/*.js'],
-                tasks: ['jshint', 'jscs', 'browserify']
+                tasks: ['jshint', 'jscs', 'browserify:app']
+            },
+            tests: {
+                files: ['tests/**/*.js'],
+                tasks: ['test']
             }
         }
     });
 
+    grunt.registerTask('test', ['jshint', 'jscs', 'browserify:tests', 'jasmine']);
     grunt.registerTask('build',
-        ['copy', 'jshint', 'jscs', 'browserify', 'cssmin']);
+        ['copy', 'jshint', 'jscs', 'browserify', 'cssmin', 'uglify']);
 };
