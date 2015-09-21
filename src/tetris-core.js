@@ -25,13 +25,15 @@ function Tetris(Config, BlockClass, FigureClass) {
         t: {id: 't', size: 3, blocks: [0x0E40, 0x4C40, 0x4E00, 0x4640]},
         z: {id: 'z', size: 3, blocks: [0x0C60, 0x2640, 0x0C60, 0x2640]}
     };
-    this.piecesLeft = ['i', 'i', 'i', 'i',
+    this.piecesLeft = [
+        'i', 'i', 'i', 'i',
         'j', 'j', 'j', 'j',
         'l', 'l', 'l', 'l',
         'o', 'o', 'o', 'o',
         's', 's', 's', 's',
         't', 't', 't', 't',
-        'z', 'z', 'z', 'z'];
+        'z', 'z', 'z', 'z'
+    ];
 
     this.listen();
 
