@@ -1,4 +1,4 @@
-# js-tetris
+# js-tetris [![Build Status](https://travis-ci.org/vergilius/js-tetris.svg?branch=master)](https://travis-ci.org/vergilius/js-tetris)
 
 This repository is focused on core logic of tetris game, so you could use it with any game engine, or own custom solution for drawing.
 
