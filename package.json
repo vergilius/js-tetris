@@ -1,22 +1,21 @@
 {
-  "name": "juliet.js",
-  "version": "0.0.1",
+  "name": "js-tetris",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "grunt test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vergilius/juliet.js.git"
+    "url": "https://github.com/vergilius/js-tetris.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "vergilius <michal.zurek@arteverest.pl>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vergilius/juliet.js/issues"
+    "url": "https://github.com/vergilius/js-tetris/issues"
   },
-  "homepage": "https://github.com/vergilius/juliet.js",
+  "homepage": "https://vergilius.github.io/js-tetris/",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.8.0",
