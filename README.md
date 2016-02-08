@@ -2,6 +2,10 @@
 
 This repository is focused on core logic of tetris game, so you could use it with any game engine, or own custom solution for drawing.
 
+## Demo
+
+[Demo here](http://vergilius.github.io/js-tetris/example.html)
+
 ## Code
 
 - Application uses browserify, but it can be easilly changed to any other module loader.
