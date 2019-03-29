@@ -10,7 +10,6 @@
     "type": "git",
     "url": "https://github.com/vergilius/js-tetris.git"
   },
-  "author": "vergilius <michal.zurek@arteverest.pl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vergilius/js-tetris/issues"
